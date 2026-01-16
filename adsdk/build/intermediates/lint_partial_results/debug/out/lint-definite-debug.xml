@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.1.0" type="incidents">
+
+    <incident
+        id="SetJavaScriptEnabled"
+        severity="warning"
+        message="Using `setJavaScriptEnabled` can introduce XSS vulnerabilities into your application, review carefully">
+        <location
+            file="${:adsdk*debug*sourceProvider*0*javaDir*0}/com/example/adsdk/WebViewActivity.java"
+            line="50"
+            column="9"
+            startOffset="1768"
+            endLine="50"
+            endColumn="47"
+            endOffset="1806"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:adsdk*debug*sourceProvider*0*javaDir*0}/com/example/adsdk/ads/appopen/AppOpenAd.java"
+            line="416"
+            column="32"
+            startOffset="16710"
+            endLine="416"
+            endColumn="84"
+            endOffset="16762"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:adsdk*debug*sourceProvider*0*javaDir*0}/com/example/adsdk/ads/banner/BannerAdView.java"
+            line="218"
+            column="43"
+            startOffset="8212"
+            endLine="218"
+            endColumn="74"
+            endOffset="8243"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:adsdk*debug*sourceProvider*0*javaDir*0}/com/example/adsdk/ads/banner/BannerAdView.java"
+            line="309"
+            column="25"
+            startOffset="12081"
+            endLine="309"
+            endColumn="30"
+            endOffset="12086"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:adsdk*debug*sourceProvider*0*javaDir*0}/com/example/adsdk/ads/interstitial/InterstitialAd.java"
+            line="292"
+            column="25"
+            startOffset="10673"
+            endLine="292"
+            endColumn="30"
+            endOffset="10678"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead">
+        <location
+            file="${:adsdk*debug*sourceProvider*0*javaDir*0}/com/example/adsdk/ads/interstitial/InterstitialAd.java"
+            line="317"
+            column="32"
+            startOffset="11776"
+            endLine="317"
+            endColumn="80"
+            endOffset="11824"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:adsdk*debug*sourceProvider*0*javaDir*0}/com/example/adsdk/ads/interstitial/InterstitialAd.java"
+            line="326"
+            column="31"
+            startOffset="12199"
+            endLine="326"
+            endColumn="61"
+            endOffset="12229"/>
+    </incident>
+
+    <incident
+        id="DefaultLocale"
+        severity="warning"
+        message="Implicitly using the default locale is a common source of bugs: Use `toUpperCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`.">
+        <location
+            file="${:adsdk*debug*sourceProvider*0*javaDir*0}/com/example/adsdk/config/AdConfigLoader.java"
+            line="179"
+            column="54"
+            startOffset="6801"
+            endLine="179"
+            endColumn="65"
+            endOffset="6812"/>
+    </incident>
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 36"
+            oldString="34"
+            replacement="36"/>
+        <location
+            file="${:adsdk*projectDir}/build.gradle"
+            line="11"
+            column="9"
+            startOffset="151"
+            endLine="11"
+            endColumn="21"
+            endOffset="163"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.1">
+        <fix-replace
+            description="Change to 1.7.1"
+            family="Update versions"
+            oldString="1.6.1"
+            replacement="1.7.1"/>
+        <location
+            file="${:adsdk*projectDir}/build.gradle"
+            line="31"
+            column="20"
+            startOffset="655"
+            endLine="31"
+            endColumn="56"
+            endOffset="691"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.android.material:material than 1.9.0 is available: 1.13.0">
+        <fix-replace
+            description="Change to 1.13.0"
+            family="Update versions"
+            oldString="1.9.0"
+            replacement="1.13.0"/>
+        <location
+            file="${:adsdk*projectDir}/build.gradle"
+            line="32"
+            column="20"
+            startOffset="711"
+            endLine="32"
+            endColumn="64"
+            endOffset="755"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.3.0">
+        <fix-replace
+            description="Change to 1.3.0"
+            family="Update versions"
+            oldString="1.1.5"
+            replacement="1.3.0"/>
+        <location
+            file="${:adsdk*projectDir}/build.gradle"
+            line="36"
+            column="31"
+            startOffset="850"
+            endLine="36"
+            endColumn="62"
+            endOffset="881"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.7.0">
+        <fix-replace
+            description="Change to 3.7.0"
+            family="Update versions"
+            oldString="3.5.1"
+            replacement="3.7.0"/>
+        <location
+            file="${:adsdk*projectDir}/build.gradle"
+            line="37"
+            column="31"
+            startOffset="912"
+            endLine="37"
+            endColumn="75"
+            endOffset="956"/>
+    </incident>
+
+</incidents>

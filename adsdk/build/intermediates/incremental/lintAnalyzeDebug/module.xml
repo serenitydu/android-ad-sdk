@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="/Users/serenity/Desktop/sdk/android-ad-sdk/adsdk"
+    name=":adsdk"
+    type="LIBRARY"
+    maven="AdSDK:adsdk:"
+    agpVersion="8.1.0"
+    buildFolder="build"
+    bootClassPath="/Users/serenity/Library/Android/sdk/platforms/android-34/android.jar:/Users/serenity/Library/Android/sdk/build-tools/33.0.1/core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-34"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="debug"/>
+</lint-module>

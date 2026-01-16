@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.1.0" type="conditional_incidents">
+
+    <incident
+        id="QueryPermissionsNeeded"
+        severity="warning"
+        message="Consider adding a `&lt;queries>` declaration to your manifest when calling this \&#xA;method; see https://g.co/dev/packagevisibility for details">
+        <location
+            file="${:adsdk*debug*sourceProvider*0*javaDir*0}/com/example/adsdk/ads/appopen/AppOpenAd.java"
+            line="651"
+            column="24"
+            startOffset="25757"
+            endLine="651"
+            endColumn="39"
+            endOffset="25772"/>
+        <map>
+            <entry
+                name="queryAll"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="QueryPermissionsNeeded"
+        severity="warning"
+        message="Consider adding a `&lt;queries>` declaration to your manifest when calling this \&#xA;method; see https://g.co/dev/packagevisibility for details">
+        <location
+            file="${:adsdk*debug*sourceProvider*0*javaDir*0}/com/example/adsdk/ads/banner/BannerAdView.java"
+            line="498"
+            column="24"
+            startOffset="20103"
+            endLine="498"
+            endColumn="39"
+            endOffset="20118"/>
+        <map>
+            <entry
+                name="queryAll"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="QueryPermissionsNeeded"
+        severity="warning"
+        message="Consider adding a `&lt;queries>` declaration to your manifest when calling this \&#xA;method; see https://g.co/dev/packagevisibility for details">
+        <location
+            file="${:adsdk*debug*sourceProvider*0*javaDir*0}/com/example/adsdk/ads/interstitial/InterstitialAd.java"
+            line="553"
+            column="24"
+            startOffset="20643"
+            endLine="553"
+            endColumn="39"
+            endOffset="20658"/>
+        <map>
+            <entry
+                name="queryAll"
+                boolean="false"/>
+        </map>
+    </incident>
+
+</incidents>

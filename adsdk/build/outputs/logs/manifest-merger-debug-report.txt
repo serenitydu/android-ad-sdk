@@ -1,0 +1,38 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml:2:1-18:12
+INJECTED from /Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml:2:1-18:12
+	package
+		INJECTED from /Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml:6:22-76
+application
+ADDED from /Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml:8:5-16:19
+activity#com.example.adsdk.WebViewActivity
+ADDED from /Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml:10:9-15:55
+	android:screenOrientation
+		ADDED from /Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml:15:13-52
+	android:hardwareAccelerated
+		ADDED from /Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml:14:13-47
+	android:exported
+		ADDED from /Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml:12:13-37
+	android:theme
+		ADDED from /Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml:13:13-71
+	android:name
+		ADDED from /Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml:11:13-44
+uses-sdk
+INJECTED from /Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml
+INJECTED from /Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml

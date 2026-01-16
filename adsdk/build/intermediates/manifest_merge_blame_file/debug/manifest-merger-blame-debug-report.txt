@@ -1,0 +1,33 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.adsdk" >
+4
+5    <uses-sdk android:minSdkVersion="21" />
+6
+7    <!-- Permission for network access to send click events -->
+8    <uses-permission android:name="android.permission.INTERNET" />
+8-->/Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml:5:5-67
+8-->/Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml:5:22-64
+9    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+9-->/Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml:6:5-79
+9-->/Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml:6:22-76
+10
+11    <application>
+11-->/Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml:8:5-16:19
+12
+13        <!-- WebView Activity for displaying local asset HTML files -->
+14        <activity
+14-->/Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml:10:9-15:55
+15            android:name="com.example.adsdk.WebViewActivity"
+15-->/Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml:11:13-44
+16            android:exported="false"
+16-->/Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml:12:13-37
+17            android:hardwareAccelerated="true"
+17-->/Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml:14:13-47
+18            android:screenOrientation="unspecified"
+18-->/Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml:15:13-52
+19            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+19-->/Users/serenity/Desktop/sdk/android-ad-sdk/adsdk/src/main/AndroidManifest.xml:13:13-71
+20    </application>
+21
+22</manifest>
