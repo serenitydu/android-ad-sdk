@@ -29,7 +29,7 @@ Copy `adsdk-release.aar` (46KB) to `app/libs/`
 ```kotlin
 // Application.onCreate()
 val config = AdSdkConfig.Builder()
-    .setClickTrackingEndpoint("http://34.21.127.172:8000/track/click")
+    .setClickTrackingEndpoint("http://localhost:8000/track/click")
     .setLoggingEnabled(BuildConfig.DEBUG)
     .build()
 
@@ -216,8 +216,8 @@ Events automatically sent to your endpoint:
 
 View events:
 ```bash
-curl http://34.21.127.172:8000/events
-curl http://34.21.127.172:8000/stats
+curl http://localhost:8000/events
+curl http://localhost:8000/stats
 ```
 
 ## Building

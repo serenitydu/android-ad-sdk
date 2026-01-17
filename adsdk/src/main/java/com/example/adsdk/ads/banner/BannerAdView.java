@@ -23,9 +23,9 @@ import com.example.adsdk.config.AdConfig;
 import com.example.adsdk.config.AdConfigLoader;
 import com.example.adsdk.listeners.AdClickListener;
 import com.example.adsdk.listeners.AdLoadListener;
+import com.example.adsdk.tracking.ClickEvent;
 import com.example.adsdk.models.AdContent;
 import com.example.adsdk.models.AdStyle;
-import com.example.adsdk.tracking.ClickEvent;
 
 import java.util.UUID;
 
@@ -433,6 +433,21 @@ public class BannerAdView extends FrameLayout {
         String styleInfo = "BANNER/" + adStyle.name();
 
         AdSdk.getInstance().log("AD_CLICKED: style=" + styleInfo + ", pattern=" + patternName);
+
+        // Track the click event
+        if (deviceId != null && !deviceId.isEmpty()) {
+            ClickEvent clickEvent = new ClickEvent.Builder()
+                    .setAdId(adId)
+                    .setAdType(AD_TYPE)
+                    .setDeviceId(deviceId)
+                    .addAdditionalData("pattern", patternName)
+                    .addAdditionalData("style", styleInfo)
+                    .build();
+
+            AdSdk.getInstance().getClickTracker().trackClick(clickEvent);
+        } else {
+            AdSdk.getInstance().logError("Cannot track click: deviceId is null or empty", null);
+        }
 
         // Notify listener
         if (clickListener != null) {

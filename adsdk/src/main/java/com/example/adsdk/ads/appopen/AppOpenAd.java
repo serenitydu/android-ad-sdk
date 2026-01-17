@@ -593,6 +593,21 @@ public class AppOpenAd {
         String styleInfo = "APP_OPEN/" + adStyle.name();
         AdSdk.getInstance().log("AD_CLICKED: style=" + styleInfo + ", pattern=" + patternName);
 
+        // Track the click event
+        if (deviceId != null && !deviceId.isEmpty()) {
+            ClickEvent clickEvent = new ClickEvent.Builder()
+                    .setAdId(adId)
+                    .setAdType(AD_TYPE)
+                    .setDeviceId(deviceId)
+                    .addAdditionalData("pattern", patternName)
+                    .addAdditionalData("style", styleInfo)
+                    .build();
+
+            AdSdk.getInstance().getClickTracker().trackClick(clickEvent);
+        } else {
+            AdSdk.getInstance().logError("Cannot track click: deviceId is null or empty", null);
+        }
+
         // Notify listener
         if (clickListener != null) {
             clickListener.onAdClicked(adId, AD_TYPE);
