@@ -1,3 +1,4 @@
 .DS_Store
 /.gradle
 /adsdk/build/intermediates
+adsdk/build/outputs/logs
