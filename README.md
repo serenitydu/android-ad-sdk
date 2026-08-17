@@ -21,7 +21,7 @@ adsdk/build/outputs/aar/adsdk-release.aar
 Copy `adsdk-release.aar` into the app's `app/libs/` directory, then add it to the app module:
 
 ```kotlin
-// app/build.gradle.kts
+// Add the following code to the app/build.gradle.kts file.
 dependencies {
     implementation(files("libs/adsdk-release.aar"))
 }
